@@ -1,0 +1,5 @@
+version: '2'   
+services:
+  pytorch:
+    build: ./pytorch
+    privileged: true
