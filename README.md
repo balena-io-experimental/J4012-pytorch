@@ -1,4 +1,4 @@
-Seeed J4012 PyTorch/TensorRT Example
+# Seeed J4012 PyTorch/TensorRT Example
 
 This is a sample for running visual inferencing on the Seeed J4012 reComputer (NVIDIA Jetson Orin NX) hardware using balenaOS.
 
