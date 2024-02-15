@@ -22,3 +22,4 @@ You should see `Building and running a GPU inference engine for Onnx MNIST` and 
 This is running the project https://github.com/dusty-nv/jetson-inference
 
 Usage tutorial: [https://www.forecr.io/blogs/ai-algorithms/hello-ai-world](https://www.forecr.io/blogs/ai-algorithms/hello-ai-world)
+To use the tutorial above, follow the steps at "How to Build the Project from Source".
