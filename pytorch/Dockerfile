@@ -2,6 +2,11 @@ FROM dustynv/l4t-pytorch:r35.3.1
 
 # The current Seeed reComputer J4012 image is based on L4T 35.3.1
 
+# Add NVIDIA sources to install software - not really needed here as base image has all dependencies...
+RUN echo "deb https://repo.download.nvidia.com/jetson/common r35.3 main" >>  /etc/apt/sources.list.d/nvidia.list \
+    && echo "deb https://repo.download.nvidia.com/jetson/t234 r35.3 main" >>  /etc/apt/sources.list.d/nvidia.list \
+    && apt-key adv --fetch-key http://repo.download.nvidia.com/jetson/jetson-ota-public.asc
+    
 # Don't prompt with any configuration questions
 ENV DEBIAN_FRONTEND noninteractive
 
