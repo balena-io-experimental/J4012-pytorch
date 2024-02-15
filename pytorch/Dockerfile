@@ -1,6 +1,6 @@
 FROM dustynv/l4t-pytorch:r35.3.1
 
-# The current Seeed reComputer J4012 image is based on L4T 35.3.1
+# The current Seeed reComputer J4012 balenaOS image is based on L4T 35.3.1
 
 # Add NVIDIA sources to install software - not really needed here as base image has all dependencies...
 RUN echo "deb https://repo.download.nvidia.com/jetson/common r35.3 main" >>  /etc/apt/sources.list.d/nvidia.list \
