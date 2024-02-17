@@ -26,7 +26,12 @@ RUN \
     ./apply_binaries.sh -r / --target-overlay && cd .. \
     rm -rf Linux_for_Tegra && \
     echo "/usr/lib/aarch64-linux-gnu/tegra" > /etc/ld.so.conf.d/nvidia-tegra.conf && ldconfig
-    
+
+# install some prereqs for the YOLOV demo:    
+RUN pip3 install PyYAML tqdm
+
+# change (downgrade) numpy version for YOLOV demo:
+RUN pip3 uninstall -y numpy && pip3 install numpy==1.23.2
 
 ENV CUDA_INSTALL_DIR /usr/local/cuda-11.4
 ENV CUDNN_INSTALL_DIR /usr/local/cuda-11.4

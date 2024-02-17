@@ -1,5 +1,9 @@
-version: '2'   
+version: '2'
+volumes:
+  inference-store:
 services:
   pytorch:
     build: ./pytorch
     privileged: true
+    volumes:
+        - 'inference-store:/inference-store'
