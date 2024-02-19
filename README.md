@@ -20,9 +20,9 @@ You should see `Building and running a GPU inference engine for Onnx MNIST` and 
 ## More information
 
 
-This example is using the project https://github.com/dusty-nv/jetson-inference, which is based on the [NVIDIA l4T PyTorch](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-pytorch) base image.
+This example repo is using the project https://github.com/dusty-nv/jetson-inference, which is based on the [NVIDIA l4T PyTorch](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-pytorch) base image.
 
-However, the project above fails to build in the container, so you should use the [NVIDIA-supplied examples](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-713/sample-support-guide/index.html#samples) which are located in the container at `/usr/src/tensorrt/samples` as mentioned above.
+However, the "jetson-interface" project fails to build in the container, so you should use the [NVIDIA-supplied examples](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-713/sample-support-guide/index.html#samples) which are located in the container at `/usr/src/tensorrt/samples` as mentioned above. Below is another NVIDIA example that does run in the container.
 
 ## Object Detection With The ONNX TensorRT Backend In Python 
 
