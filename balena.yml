@@ -1,0 +1,19 @@
+name: J4012-pytorch
+type: sw.application
+description: >-
+  Example of Pytorch/TensorRT visual inferencing on a Seeed J4012 running balena.
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/balena-io-experimental/J4012-pytorch'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/balena-io-experimental/J4012-pytorch/master/project-logo.jpg
+data:
+  defaultDeviceType: jetson-orin-nx-seeed-j4012
+  supportedDeviceTypes:
+    - jetson-orin-nx-seeed-j4012
+version: 0.0.2
